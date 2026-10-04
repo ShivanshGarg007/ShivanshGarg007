@@ -23,21 +23,23 @@
 <text x="20" y="72" clip-path="url(#clipLine0)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve"><tspan fill="#d2a8ff">const </tspan>developer: Engineer = {</text>
 <clipPath id="clipLine1"><rect x="20" y="78" width="0" height="20"><animate attributeName="width" from="0" to="182" begin="1.76s" dur="0.96s" fill="freeze"/></rect></clipPath>
 <text x="20" y="92" clip-path="url(#clipLine1)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  name: 'Shivansh Garg',</text>
-<clipPath id="clipLine2"><rect x="20" y="98" width="0" height="20"><animate attributeName="width" from="0" to="341" begin="2.82s" dur="1.84s" fill="freeze"/></rect></clipPath>
-<text x="20" y="112" clip-path="url(#clipLine2)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  skills: ['React', 'Node', 'Python', 'Java'],</text>
-<clipPath id="clipLine3"><rect x="20" y="118" width="0" height="20"><animate attributeName="width" from="0" to="233" begin="4.76s" dur="1.24s" fill="freeze"/></rect></clipPath>
-<text x="20" y="132" clip-path="url(#clipLine3)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  focus: 'Distributed Systems',</text>
-<clipPath id="clipLine4"><rect x="20" y="138" width="0" height="20"><animate attributeName="width" from="0" to="154" begin="6.10s" dur="0.80s" fill="freeze"/></rect></clipPath>
-<text x="20" y="152" clip-path="url(#clipLine4)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  location: 'India',</text>
-<clipPath id="clipLine5"><rect x="20" y="158" width="0" height="20"><animate attributeName="width" from="0" to="168" begin="7.00s" dur="0.88s" fill="freeze"/></rect></clipPath>
-<text x="20" y="172" clip-path="url(#clipLine5)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e3b341" xml:space="preserve">  problemSolver: <tspan fill="#ffa657">true</tspan>,</text>
-<clipPath id="clipLine6"><rect x="20" y="178" width="0" height="20"><animate attributeName="width" from="0" to="190" begin="7.98s" dur="1.00s" fill="freeze"/></rect></clipPath>
-<text x="20" y="192" clip-path="url(#clipLine6)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">  writeCode: <tspan fill="#d2a8ff">function</tspan>() {</text>
-<clipPath id="clipLine7"><rect x="20" y="198" width="0" height="20"><animate attributeName="width" from="0" to="348" begin="9.08s" dur="1.88s" fill="freeze"/></rect></clipPath>
-<text x="20" y="212" clip-path="url(#clipLine7)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">    <tspan fill="#d2a8ff">return </tspan>'Building scalable applications...';</text>
-<clipPath id="clipLine8"><rect x="20" y="218" width="0" height="20"><animate attributeName="width" from="0" to="31" begin="11.06s" dur="0.12s" fill="freeze"/></rect></clipPath>
-<text x="20" y="232" clip-path="url(#clipLine8)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">  }</text>
-<clipPath id="clipLine9"><rect x="20" y="238" width="0" height="20"><animate attributeName="width" from="0" to="24" begin="11.28s" dur="0.08s" fill="freeze"/></rect></clipPath>
-<text x="20" y="252" clip-path="url(#clipLine9)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">};</text>
-<rect x="20" y="238" width="7" height="14" fill="#79c0ff" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="11.46s" dur="0.001s" fill="freeze"/><animate attributeName="opacity" values="1;0;1" begin="11.96s" dur="1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" from="14" to="14" begin="11.46s" dur="0.001s" fill="freeze"/></rect>
+<clipPath id="clipLine2"><rect x="20" y="98" width="0" height="20"><animate attributeName="width" from="0" to="161" begin="2.82s" dur="0.84s" fill="freeze"/></rect></clipPath>
+<text x="20" y="112" clip-path="url(#clipLine2)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  company: 'Lowe\'s',</text>
+<clipPath id="clipLine3"><rect x="20" y="118" width="0" height="20"><animate attributeName="width" from="0" to="341" begin="3.76s" dur="1.84s" fill="freeze"/></rect></clipPath>
+<text x="20" y="132" clip-path="url(#clipLine3)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  skills: ['React', 'Node', 'Python', 'Java'],</text>
+<clipPath id="clipLine4"><rect x="20" y="138" width="0" height="20"><animate attributeName="width" from="0" to="233" begin="5.70s" dur="1.24s" fill="freeze"/></rect></clipPath>
+<text x="20" y="152" clip-path="url(#clipLine4)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  focus: 'Distributed Systems',</text>
+<clipPath id="clipLine5"><rect x="20" y="158" width="0" height="20"><animate attributeName="width" from="0" to="154" begin="7.04s" dur="0.80s" fill="freeze"/></rect></clipPath>
+<text x="20" y="172" clip-path="url(#clipLine5)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">  location: 'India',</text>
+<clipPath id="clipLine6"><rect x="20" y="178" width="0" height="20"><animate attributeName="width" from="0" to="168" begin="7.94s" dur="0.88s" fill="freeze"/></rect></clipPath>
+<text x="20" y="192" clip-path="url(#clipLine6)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e3b341" xml:space="preserve">  problemSolver: <tspan fill="#ffa657">true</tspan>,</text>
+<clipPath id="clipLine7"><rect x="20" y="198" width="0" height="20"><animate attributeName="width" from="0" to="190" begin="8.92s" dur="1.00s" fill="freeze"/></rect></clipPath>
+<text x="20" y="212" clip-path="url(#clipLine7)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">  writeCode: <tspan fill="#d2a8ff">function</tspan>() {</text>
+<clipPath id="clipLine8"><rect x="20" y="218" width="0" height="20"><animate attributeName="width" from="0" to="348" begin="10.02s" dur="1.88s" fill="freeze"/></rect></clipPath>
+<text x="20" y="232" clip-path="url(#clipLine8)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#56d364" xml:space="preserve">    <tspan fill="#d2a8ff">return </tspan>'Building scalable applications...';</text>
+<clipPath id="clipLine9"><rect x="20" y="238" width="0" height="20"><animate attributeName="width" from="0" to="31" begin="12.00s" dur="0.12s" fill="freeze"/></rect></clipPath>
+<text x="20" y="252" clip-path="url(#clipLine9)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">  }</text>
+<clipPath id="clipLine10"><rect x="20" y="258" width="0" height="20"><animate attributeName="width" from="0" to="24" begin="12.22s" dur="0.08s" fill="freeze"/></rect></clipPath>
+<text x="20" y="272" clip-path="url(#clipLine10)" font-family="'Courier New',Courier,monospace" font-size="12" fill="#e6edf3" xml:space="preserve">};</text>
+<rect x="20" y="258" width="7" height="14" fill="#79c0ff" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="12.40s" dur="0.001s" fill="freeze"/><animate attributeName="opacity" values="1;0;1" begin="12.90s" dur="1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" from="14" to="14" begin="12.40s" dur="0.001s" fill="freeze"/></rect>
 </svg>

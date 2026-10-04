@@ -23,7 +23,7 @@ GH_USERNAME = os.getenv("GH_USERNAME", "ShivanshGarg007")
 GH_TOKEN    = os.getenv("GH_TOKEN", "")
 
 NAME      = "Shivansh Garg"
-ROLE      = "Software Engineer"
+ROLE      = "Associate Software Engineer @ Lowe's"
 EDUCATION = "Chitkara University (CGPA: 10.00)"
 LOCATION  = "India"
 PORTFOLIO = "shivanshgarg.vercel.app"
@@ -214,6 +214,7 @@ def generate_code_svg(card_h: int) -> str:
     code_lines = [
         (f"const developer: Engineer = {{", TEXT),
         (f"  name: '{NAME}',", GREEN),
+        (f"  company: 'Lowe\\'s',", GREEN),
         (f"  skills: ['React', 'Node', 'Python', 'Java'],", GREEN),
         (f"  focus: 'Distributed Systems',", GREEN),
         (f"  location: '{LOCATION}',", GREEN),
