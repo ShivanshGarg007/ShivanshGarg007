@@ -17,45 +17,26 @@ I am a passionate Full-Stack Software Engineer and a Computer Science undergradu
 
 ## 💻 Projects
 
-### [OpenLearning AI 🚀](https://openlearning.vercel.app)
-> Democratizing education by transforming any topic or paid course into a structured, free, and interactive learning curriculum.
+### OpenLearning AI 🚀
+> An intelligent aggregation layer that transforms any topic or paid course into a structured, free, and interactive learning curriculum.
 
-![OpenLearning OS](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+**Key Features:** Instant curriculum generation, course extraction, context-aware neural tutor, real-time voice mentorship (Gemini Live), automated quizzes, and study schedule builder.  
+**Tech Stack:** React, TypeScript, Node.js, Python (FastAPI), Crawl4AI, Gemini 2.5 Flash, Supabase.
 
-**Overview**
-OpenLearning AI bridges the gap between unstructured free content and expensive paid courses. It acts as an **Intelligent Aggregation Layer**: you give it a topic or a link to an expensive bootcamp, and the AI engine generates a complete, structured syllabus. It automatically maps the best free YouTube videos to each module, attaches a context-aware AI tutor, and generates quizzes to verify your comprehension.
+<a href="https://openlearning.vercel.app"><img src="https://img.shields.io/badge/Visit_Application-4CAF50?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 
-**✨ Key Features**
-- 🚀 **Instant Curriculum Generation**: Enter any topic to generate a personalized, structured learning roadmap.
-- 🔗 **Course Extractor**: Paste a link to an expensive paid course. The AI scrapes the syllabus and recreates it using free video equivalents.
-- 🧠 **Context-Aware Neural Tutor**: An AI assistant that knows exactly what video you are watching. It answers questions strictly based on the video's transcript, eliminating hallucinations.
-- 🎙️ **Real-Time Voice Mentorship**: Click a microphone to have a hands-free, real-time spoken conversation with the AI tutor (powered by Gemini Live).
-- 📝 **Automated Verification Quizzes**: Instantly generate 5-question quizzes to test your knowledge before moving forward.
-- 📅 **Study Schedule Builder**: Automatically distribute your roadmap across a personalized weekly calendar.
-
-**🛠️ Tech Stack**
-- **Frontend**: React 18, Vite, TypeScript, TailwindCSS, Framer Motion, Spline.
-- **Node Backend (Interactive & Auth)**: Node.js, Express, WebSockets (for Voice Tutor proxy), Supabase.
-- **Python Engine (AI Orchestration)**: Python, FastAPI, Crawl4AI (web scraping), Gemini 2.5 Flash, Pydantic.
-- **Database**: Supabase (PostgreSQL + Auth).
-
-### [Notora](https://github.com/ShivanshGarg007/Notora)
+### Notora
 *Collaborative academic notes platform (React.js, Node.js, MongoDB, Socket.io)*
-- Built a centralized platform for students to upload, search, and download lecture notes, featuring real-time chat (Socket.io) and OCR-based document search.
-- Reached 100+ active users and 1,700+ page views within weeks.
-- Implemented role-based authentication with Google OAuth + JWT and automated Netlify/Render deployments.
+
+**Key Features:** Centralized platform for students to upload, search, and download lecture notes, featuring real-time chat (Socket.io) and OCR-based document search.  
+
+<a href="https://github.com/ShivanshGarg007/Notora"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 ## 🏆 Achievements & Hackathons
 - 🥇 **Winner**, Build with Bharat 3.0
 - 🏅 **Finalist**, Hack4Delhi 2026 (Top 30/4,500+)
-- 🌟 **Selected Participant**: Adobe India Hackathon, India AI Impact Buildathon, Promptrepo, SIH, and HackIndia.
-- 📜 **Certifications**: Back End Development and APIs (freeCodeCamp, 2025), British Council English – Core Skills (C1) & Speaking (B2).
 
 <br/>
-
-### 🏆 GitHub Trophies
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivanshgarg007" alt="shivanshgarg007" /></a> </p>
 
 ### 💻 Languages and Tools
 <p align="center">
@@ -92,6 +73,7 @@ OpenLearning AI bridges the gap between unstructured free content and expensive 
 
 ### 📫 Connect with me:
 <p align="center">
+<a href="https://shivanshgarg.vercel.app" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" height="30" /></a>
 <a href="mailto:shivanshgarg007@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="shivanshgarg007" height="30" /></a>
 <a href="https://twitter.com/shivans53548165" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="shivans53548165" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/shivanshgarg77" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="shivanshgarg77" height="30" width="40" /></a>
