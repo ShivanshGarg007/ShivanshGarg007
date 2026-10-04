@@ -38,5 +38,6 @@ jobs:
           git add assets/ README.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh profile assets"
+            git pull --rebase
             git push
           fi

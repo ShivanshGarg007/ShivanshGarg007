@@ -28,5 +28,6 @@ jobs:
           git add .github/data/sync.log
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync system metrics"
+            git pull --rebase
             git push
           fi
