@@ -7,6 +7,24 @@
 
 <br/>
 
+<!-- PROFILE-SVG-START -->
+<table align="center">
+  <tr>
+    <td valign="top" align="center">
+      <img src="assets/terminal-card.svg" />
+    </td>
+    <td valign="top" align="center">
+      <img src="assets/info-card.svg" />
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <img src="assets/github-contribution-animation.svg" />
+</div>
+<!-- PROFILE-SVG-END -->
+
+
 I am a passionate Full-Stack Software Engineer and a Computer Science undergraduate at Chitkara University (CGPA: 10.00/10). I specialize in JavaScript, TypeScript, React, Node.js, and Java. I love building scalable applications, designing robust APIs, and creating seamless user experiences.
 
 ## 🚀 About Me
@@ -28,8 +46,11 @@ I am a passionate Full-Stack Software Engineer and a Computer Science undergradu
 ### Notora
 *Collaborative academic notes platform (React.js, Node.js, MongoDB, Socket.io)*
 
-**Key Features:** Centralized platform for students to upload, search, and download lecture notes, featuring real-time chat (Socket.io) and OCR-based document search.  
+**Key Features:** Centralized platform for students to upload, search, and download lecture notes, featuring real-time chat (Socket.io) and OCR-based document search. Reached **100+ active users** and **1,700+ page views** within weeks.
 
+**Tech Stack:** React.js, Node.js, Express, MongoDB, Socket.io, Google OAuth + JWT, Netlify/Render.
+
+<a href="https://shivansh-notora.netlify.app/"><img src="https://img.shields.io/badge/Visit_Application-4CAF50?style=for-the-badge&logo=netlify&logoColor=white" /></a>
 <a href="https://github.com/ShivanshGarg007/Notora"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 ## 🏆 Achievements & Hackathons

@@ -1,0 +1,42 @@
+name: Generate Premium Profile SVGs
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # Daily at 01:00 UTC
+  workflow_dispatch:        # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate SVG Assets
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USERNAME: ShivanshGarg007
+        run: python scripts/generate_svgs.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name  "ShivanshGarg007"
+          git config user.email "shivanshgarg007@gmail.com"
+          git add assets/ README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh profile assets"
+            git push
+          fi
