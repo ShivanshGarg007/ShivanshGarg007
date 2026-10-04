@@ -1,0 +1,34 @@
+<svg width="1600" height="{{CANVAS_HEIGHT}}" viewBox="0 0 1600 {{CANVAS_HEIGHT}}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+    .window { fill: {{BG_COLOR}}; }
+    .border { stroke: {{BORDER_COLOR}}; stroke-width: 2; }
+    .title-bar { fill: {{TITLE_BAR_BG}}; }
+    .text { font-family: 'JetBrains Mono', monospace; font-size: 16px; fill: {{TEXT_COLOR}}; }
+    .keyword { fill: {{KEYWORD_COLOR}}; }
+    .string { fill: {{STRING_COLOR}}; }
+    .prompt { fill: {{PROMPT_COLOR}}; font-weight: bold; }
+    .value { fill: {{VALUE_COLOR}}; }
+    .accent { fill: {{ACCENT_COLOR}}; }
+    
+    /* Terminal UI Dashboard Styles */
+    .pane-border { stroke: {{BORDER_COLOR}}; stroke-width: 2; fill: none; }
+    .pane-title { fill: {{TITLE_BAR_FG}}; font-weight: bold; font-size: 14px; }
+    .chart-bar-bg { fill: {{TITLE_BAR_BG}}; }
+    .chart-bar-fg { fill: {{ACCENT_COLOR}}; }
+    .text-dim { fill: {{TITLE_BAR_FG}}; }
+  </style>
+
+  <rect x="0" y="0" width="1600" height="{{CANVAS_HEIGHT}}" rx="12" class="window border"/>
+  
+  <path d="M0 12C0 5.37 5.37 0 12 0H1588C1594.63 0 1600 5.37 1600 12V40H0V12Z" class="title-bar" />
+  <rect x="0" y="0" width="1600" height="40" rx="12" class="title-bar" />
+  <rect x="0" y="20" width="1600" height="20" class="title-bar" />
+  
+  <circle cx="25" cy="20" r="7" fill="#ff5f56"/>
+  <circle cx="55" cy="20" r="7" fill="#ffbd2e"/>
+  <circle cx="85" cy="20" r="7" fill="#27c93f"/>
+  <text x="800" y="26" class="text" fill="{{TITLE_BAR_FG}}" text-anchor="middle" font-size="16">vansh@thapar: ~</text>
+
+  {{CONTENT}}
+</svg>

@@ -1,0 +1,260 @@
+<div align="center">
+  <img 
+    src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" 
+    width="100%" 
+    style="max-width:100%; height:auto;"
+  />
+</div>
+
+<p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
+
+> **👨‍💻 About Me** <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+
+- 🔭 I’m **[mwakidenis](https://mitrokit-ventures-me.vercel.app/)**
+- 🐛 A passionate **Full-Stack Developer** and **Cloud Expert** with **over 3 years of experience** in building scalable web applications and digital solutions. My journey started with a curiosity for how things work, and it has evolved into a career dedicated to creating impactful technology.
+- 🔭Currently working on a **👉[template](https://v3-portfolio-website-2026.pages.dev/)**  
+- 🌐 Visit my **recently completed project 👉[Mpesa Based Hotspot Billing System](https://github.com/mwakidenis/Mpesa-Based_WiFi_Billing_System)**
+- 🎮 **_NEW Features_**: **Mpesa payments**, **live inventory**, **responsive design**  
+- 🌱 I’m currently specializing in **Fullstack JS, Next.js, React and Prompt AI** 
+- 🏬 Pay a visit to my **👉[interactive portfolio](https://mwakidenis.pages.dev/)**
+- 📫 How to reach me:  
+  [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://x.com/Apro5550)<br>
+  [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](https://d27715920@gmail.com) <br>
+![WARNING](https://img.shields.io/badge/🚫_NO_FREE_ADVISORY-red?style=flat)<br>
+- Thank you for your interest. **I do not provide free consultations** and support services are offered starting $5.
+- 👯 I’m currently maintaining some of the most **exciting open-source projects**
+- My current open source activity is highly focused on the **Javascript** ecosystem
+- I take great pride in helping to improve the ecosystem through **bug fixes**, **responding to issues**, and **developing new features**.
+- It is also important to me to ensure **accuracy**, **scalability**, and **security of the code** that I am involved with. 
+- ⚡ Fun fact: **It works on my machine😃!**
+
+
+</div>
+  
+  
+<div align="center">
+
+  <h2>
+    📊 Profile Stats
+    <img
+      height="40"
+      alt="Mwaki Denis"
+      src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"
+    />
+  </h2>
+
+  <table align="center">
+    <tr>
+      <td><b>👀 Views</b></td>
+      <td><b>👤 Followers</b></td>
+      <td><b>🌟 Stars</b></td>
+      <td><b>✅ Awesome</b></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://komarev.com/ghpvc/?username=mwakidenis&style=flat-square" />
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/followers/mwakidenis?style=social" />
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/stars/mwakidenis?style=social" />
+      </td>
+      <td>
+        <img src="https://awesome.re/badge.svg" />
+      </td>
+    </tr>
+  </table>
+
+[![committers.top](https://user-badge.committers.top/kenya_public/mwakidenis.svg)](https://user-badge.committers.top/kenya_public/mwakidenis)
+
+
+  
+</div>
+
+<div align="center">
+
+  <h2>
+    🖥️ Github Activity
+    <img
+      height="40"
+      alt="Mwaki Denis"
+      src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"
+    />
+  </h2>
+
+  <p align="left">
+  <img src="https://github.com/mwakidenis/mwakidenis/blob/main/profile-3d-contrib/profile-night-rainbow.svg">
+</p>
+
+  <div align="center">
+    <a href="https://git.io/typing-svg">
+      <img
+        src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C03&center=true&vCenter=true&width=435&lines=;Fullstack+Developer;MERN+Stack+Builder;Next.js+Enthusiast;React+Lover;Open+Source+Contributor"
+      />
+    </a>
+  </div>
+  
+<div align="center">
+  <img width="48%" src="https://github-readme-stats-fast.vercel.app/api?username=mwakidenis&show_icons=true&theme=radical"/>
+  <img width="48%" src="https://github-readme-streak-stats-eight.vercel.app/?user=mwakidenis&theme=radical"/>
+</div>
+
+<table>
+<tr>
+<td width="33%">
+
+<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=mwakidenis&layout=donut&theme=transparent&hide_border=true&langs_count=8&border_radius=20&title_color=00FF41&text_color=C9D1D9&bg_color=00000000" height="200" />
+
+</td>
+<td width="33%">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mwakidenis&theme=transparent" />
+
+</td>
+<td width="33%">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mwakidenis&theme=transparent&utc_offset=5.5" />
+
+</td>
+</tr>
+</table>
+</p>
+
+</div>
+
+  <div align="center">
+    <img
+      src="https://github-trophies.vercel.app/?username=mwakidenis&theme=discord&no-frame=true&no-bg=true&margin-w=4"
+    />
+  </div>
+
+<div align="center">
+  <img
+    src="https://ghchart.rshah.org/mwakidenis"
+    alt="GitHub Contribution Chart"
+  />
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td align="left" width="50%">
+
+
+## 🐾 Git Animals   <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+<img src="https://render.gitanimals.org/farms/mwakidenis" width="500"/>
+
+</td>
+
+<td align="center" width="50%">
+
+
+## 🎮 TETRIS FUN  <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+
+<a href="https://mwakidenis.github.io/games" target="_blank">
+  <img src="https://charmve.github.io/sponsor_files/playagame.png" alt="Play Tetris with Me" width="180px">
+</a>
+
+**🎮 Play Tetris with Me!**  
+Watch the blocks stack!
+
+🟦🟥🟩🟨🟪🟦🟨<br>
+🟥🟩🟪🟦🟩🟨🟥<br>
+🟩🟨🟥🟦🟪🟩🟦<br>
+🟪🟦🟨🟥🟩🟦🟨<br>
+🟦🟨🟪🟩🟥🟪🟩<br><br>
+
+Keep stacking and clearing lines! 🚀<br>
+🎮 **Play the real game here:** 👉 https://bit.ly/49wfF2O
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+### ✨ Fun Zone <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+<div align="center">
+  <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card"/>
+</div>
+
+## Random Developer Quote 💡 <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+
+<img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200"'>
+
+> ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+
+</div>
+
+---
+
+<div align=center>
+
+### 📫 **Connect with Me** <img height="40" alt="Mwaki Denis" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/>
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Apro5550)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mwakidenis)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mwakidenis/)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://web.facebook.com/l/6lp1kJRRR)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@denicemwaki?si=rewYQiy379ztYPVN)
+
+---
+# My Code Kingdom 😂
+  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mwakidenis/mwakidenis/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mwakidenis/mwakidenis/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/mwakidenis/mwakidenis/output/github-snake.svg" />
+</picture>
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&duration=4000&pause=1000&color=00C4CC&width=435&lines=Mwaki+Denis+😁+-+Software+Engineer+💻;MERN+Stack+Dev+🚀+%7C+Next.js+Dev+⚡;Building+Mpesa+Hotspot+Billing+❤;Dart+flutter+Ethusiast+😁+✨;💼+Future+CTO+in+the+Making+%F0%9F%92%AA;Empowering+Startups+Across+Africa+🌍;Just+a+Curious+Dev+on+a+Mission+🌟;Harvard🎓+ALP+25+%7C+Mentor+and+Mentee+🎓;" />
+</p>
+
+[![Mwaki's gitartwork](gitartwork.svg)](https://github.com/mwakidenis)
+
+## Projects Admin ⚡
+
+<table align="center">
+  <tr>
+    <td align="center">
+        <img src="https://res.cloudinary.com/dqv8dlj2s/image/upload/v1772276752/IMG_20251220_111730_cqlgfo.jpg" width="750" height="250" />
+      </a>
+      <h4>mwakidenis</h4>
+    </td>
+  </tr>
+</table>
+
+<div><h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors</h2></div>
+
+I extend my heartfelt gratitude for any invaluable contribution to my projects! Your efforts play a significant role in improving and elevating these repositories to greater heights.
+
+--- 
+
+### ☕ Fuel my next project 
+
+<p align="center">
+  <a href="https://github.com/sponsors/mwakidenis" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" />
+  </a>
+</p>
+
+## 🌐 Connect & Support    
+
+<div align=center>
+<a href="https://github.com/mwakidenis"><img width="40" height="40" alt="github" src="https://github.com/user-attachments/assets/b5df5c33-d971-4fd1-b0d7-36a56ec78eed" /></a>
+<a href="https://gitlab.com/mwakidenis"><img width="40" height="40" alt="gitlab" src="https://github.com/user-attachments/assets/412140b6-9806-428c-bab4-25ab6b34897e" /></a>
+<a href="https://bitbucket.org/mwakidenis/workspace/overview/"><img width="40" height="40" alt="bitbucket" src="https://github.com/user-attachments/assets/7b63823d-7042-42cc-a6bb-e1ae0f3a19de" /></a>
+My progress can be tracked from GitRoll
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks%20for%20visiting%20My%20Profile!&fontSize=20&fontColor=fff&animation=twinkling"/>
+
+###### mwakidenis © 2026  Crafted with ❤️
+
+Last updated: 2026-10-04 10:46 UTC

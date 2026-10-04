@@ -1,0 +1,32 @@
+name: System Metrics Sync
+
+on:
+  schedule:
+    # Runs 5 times a day (at 03:00, 08:00, 13:00, 18:00, and 23:00)
+    - cron: '0 3,8,13,18,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Update Sync Timestamp
+        run: |
+          mkdir -p .github/data
+          echo "Last sync: $(date -u)" > .github/data/sync.log
+
+      - name: Commit Internal States
+        run: |
+          git config user.name "ShivanshGarg007"
+          git config user.email "shivanshgarg007@gmail.com"
+          git add .github/data/sync.log
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync system metrics"
+            git push
+          fi
