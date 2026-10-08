@@ -32,7 +32,7 @@
 <text x="32" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Oct</text>
 <text x="92" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Nov</text>
 <text x="152" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Dec</text>
-<text x="227" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Jan</text>
+<text x="212" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Jan</text>
 <text x="287" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Feb</text>
 <text x="347" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Mar</text>
 <text x="407" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Apr</text>
@@ -41,7 +41,7 @@
 <text x="602" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Jul</text>
 <text x="677" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Aug</text>
 <text x="737" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Sep</text>
-<text x="812" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Oct</text>
+<text x="797" y="36" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Oct</text>
 <text x="27" y="73" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="8" fill="#8b949e">Mon</text>
 <text x="27" y="103" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="8" fill="#8b949e">Wed</text>
 <text x="27" y="133" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="8" fill="#8b949e">Fri</text>
@@ -515,9 +515,10 @@
 <rect x="812" y="61" width="12" height="12" rx="2" fill="white" opacity="0"><animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.01;0.25;1" begin="1.368s" dur="0.55s" fill="freeze"/></rect>
 <rect x="812" y="76" width="12" height="12" rx="2" fill="#39d353" filter="url(#glow4)" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.344s" dur="0.28s" fill="freeze"/></rect>
 <rect x="812" y="76" width="12" height="12" rx="2" fill="white" opacity="0"><animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.01;0.25;1" begin="1.344s" dur="0.55s" fill="freeze"/></rect>
-<rect x="812" y="91" width="12" height="12" rx="2" fill="#0e4429" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.320s" dur="0.28s" fill="freeze"/></rect>
+<rect x="812" y="91" width="12" height="12" rx="2" fill="#006d32" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.320s" dur="0.28s" fill="freeze"/></rect>
 <rect x="812" y="91" width="12" height="12" rx="2" fill="white" opacity="0"><animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.01;0.25;1" begin="1.320s" dur="0.55s" fill="freeze"/></rect>
-<rect x="812" y="106" width="12" height="12" rx="2" fill="#161b22" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.296s" dur="0.28s" fill="freeze"/></rect>
+<rect x="812" y="106" width="12" height="12" rx="2" fill="#0e4429" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.296s" dur="0.28s" fill="freeze"/></rect>
+<rect x="812" y="106" width="12" height="12" rx="2" fill="white" opacity="0"><animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.01;0.25;1" begin="1.296s" dur="0.55s" fill="freeze"/></rect>
 <rect x="812" y="121" width="12" height="12" rx="2" fill="#161b22" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.272s" dur="0.28s" fill="freeze"/></rect>
 <rect x="812" y="136" width="12" height="12" rx="2" fill="#161b22" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.248s" dur="0.28s" fill="freeze"/></rect>
 <text x="700" y="174" font-family="'JetBrains Mono',monospace" font-size="9" fill="#8b949e">Less</text>
