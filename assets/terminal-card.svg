@@ -1,0 +1,39 @@
+<svg width="400" height="320" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+  <linearGradient id="winBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1c2128"/>
+    <stop offset="100%" stop-color="#0d1117"/>
+  </linearGradient>
+  <linearGradient id="titleBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#21262d"/>
+    <stop offset="100%" stop-color="#1c2128"/>
+  </linearGradient>
+  <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#56d364"/>
+    <stop offset="50%"  stop-color="#79c0ff"/>
+    <stop offset="100%" stop-color="#d2a8ff"/>
+  </linearGradient>
+</defs>
+<rect width="400" height="320" fill="url(#winBg)" rx="12" stroke="#30363d" stroke-width="1"/>
+<rect width="400" height="36" fill="url(#titleBg)" rx="12"/>
+<rect y="24" width="400" height="12" fill="url(#titleBg)"/>
+<line x1="0" y1="36" x2="400" y2="36" stroke="#21262d" stroke-width="1"/>
+<circle cx="16" cy="18" r="6" fill="#ff5f57"/>
+<circle cx="36" cy="18" r="6" fill="#ffbd2e"/>
+<circle cx="56" cy="18" r="6" fill="#28c840"/>
+<text x="200" y="22" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" fill="#8b949e">git log --oneline</text>
+<circle cx="344" cy="18" r="5" fill="#56d364" opacity="0.9"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2s" repeatCount="indefinite"/></circle><text x="353" y="22" font-family="'JetBrains Mono',monospace" font-size="10" fill="#56d364">LIVE</text>
+<rect x="0" y="0" width="400" height="3" fill="url(#accentLine)" rx="12"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.2s" fill="freeze"/><text x="18" y="72" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">a3f9b2c</text><rect x="80" y="59" width="36" height="15" rx="3" fill="#56d364" opacity="0.18"/><text x="98" y="72" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#56d364">feat</text><text x="122" y="72" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">OpenLearning: voice mentor module</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.25s" dur="0.2s" fill="freeze"/><text x="18" y="94" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">d17c841</text><rect x="80" y="81" width="36" height="15" rx="3" fill="#ffa657" opacity="0.18"/><text x="98" y="94" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#ffa657">wip</text><text x="122" y="94" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Distributed caching layer (Redis)</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.2s" fill="freeze"/><text x="18" y="116" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">88e2f34</text><rect x="80" y="103" width="36" height="15" rx="3" fill="#d2a8ff" opacity="0.18"/><text x="98" y="116" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#d2a8ff">arch</text><text x="122" y="116" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Microservices split in progress</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.45s" dur="0.2s" fill="freeze"/><text x="18" y="138" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">c5a0912</text><rect x="80" y="125" width="36" height="15" rx="3" fill="#56d364" opacity="0.18"/><text x="98" y="138" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#56d364">feat</text><text x="122" y="138" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Notora v2: real-time collab editor</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.2s" fill="freeze"/><text x="18" y="160" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">f9d3b77</text><rect x="80" y="147" width="36" height="15" rx="3" fill="#e3b341" opacity="0.18"/><text x="98" y="160" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#e3b341">perf</text><text x="122" y="160" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Query optimisation — 3× speedup</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.65s" dur="0.2s" fill="freeze"/><text x="18" y="182" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">02e8c1a</text><rect x="80" y="169" width="36" height="15" rx="3" fill="#ff7b72" opacity="0.18"/><text x="98" y="182" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#ff7b72">fix</text><text x="122" y="182" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Race condition in auth middleware</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.75s" dur="0.2s" fill="freeze"/><text x="18" y="204" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">b44f203</text><rect x="80" y="191" width="36" height="15" rx="3" fill="#56d364" opacity="0.18"/><text x="98" y="204" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#56d364">feat</text><text x="122" y="204" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">LLM eval pipeline (LangChain)</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.85s" dur="0.2s" fill="freeze"/><text x="18" y="226" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#79c0ff">7cb8d56</text><rect x="80" y="213" width="36" height="15" rx="3" fill="#ffa657" opacity="0.18"/><text x="98" y="226" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#ffa657">wip</text><text x="122" y="226" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#e6edf3">Portfolio v3 redesign</text></g>
+<line x1="18" y1="290" x2="382" y2="290" stroke="#21262d" stroke-width="1" opacity="0.5"/>
+<text x="18" y="300" font-family="'JetBrains Mono',monospace" font-size="10" fill="#8b949e">github.com/ShivanshGarg007</text>
+<text x="382" y="300" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="10" fill="#8b949e">8 recent commits</text>
+</svg>
