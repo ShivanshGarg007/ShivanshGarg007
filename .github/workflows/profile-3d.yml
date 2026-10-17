@@ -20,8 +20,8 @@ jobs:
           USERNAME: ShivanshGarg007
       - name: Commit & Push
         run: |
-          git config user.name "ShivanshGarg007"
-          git config user.email "shivanshgarg007@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A .
           if git commit -m "chore: generated 3D contribution graph"; then
             git pull --rebase

@@ -39,7 +39,7 @@ ASSETS_DIR  = BASE_DIR / "assets"
 README_PATH = BASE_DIR / "README.md"
 ASSETS_DIR.mkdir(exist_ok=True)
 
-# ── Palette ────────────────────────────────────────────────────────
+# ── Dark Palette ───────────────────────────────────────────────────
 BG      = "#0d1117"
 SURFACE = "#161b22"
 BORDER  = "#21262d"
@@ -54,6 +54,22 @@ YELLOW  = "#e3b341"
 RED     = "#ff7b72"
 
 CONTRIB_COLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+
+# ── Light Palette ──────────────────────────────────────────────────
+L_BG      = "#ffffff"
+L_SURFACE = "#f6f8fa"
+L_BORDER  = "#d0d7de"
+L_BORDER2 = "#afb8c1"
+L_TEXT    = "#24292f"
+L_DIM     = "#57606a"
+L_CYAN    = "#0550ae"
+L_GREEN   = "#1a7f37"
+L_ORANGE  = "#bc4c00"
+L_PURPLE  = "#6639ba"
+L_YELLOW  = "#9a6700"
+L_RED     = "#cf222e"
+
+L_CONTRIB_COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
 
 README_MARKER_START = "<!-- PROFILE-SVG-START -->"
 README_MARKER_END   = "<!-- PROFILE-SVG-END -->"
@@ -119,7 +135,19 @@ def _fake_contributions() -> list[list[int]]:
 # ══════════════════════════════════════════════════════════════════
 # ── SVG 1: CONTRIBUTION GRAPH ──────────────────────────────────────
 # ══════════════════════════════════════════════════════════════════
-def generate_contribution_svg(grid: list[list[int]]) -> str:
+def generate_contribution_svg(grid: list[list[int]], theme: str = "dark") -> str:
+    # Pick palette based on theme
+    _BG      = L_BG      if theme == "light" else BG
+    _BORDER2 = L_BORDER2 if theme == "light" else BORDER2
+    _TEXT    = L_TEXT    if theme == "light" else TEXT
+    _DIM     = L_DIM     if theme == "light" else DIM
+    _CYAN    = L_CYAN    if theme == "light" else CYAN
+    _PURPLE  = L_PURPLE  if theme == "light" else PURPLE
+    _ORANGE  = L_ORANGE  if theme == "light" else ORANGE
+    _CONTRIB = L_CONTRIB_COLORS if theme == "light" else CONTRIB_COLORS
+    _BG2     = L_SURFACE if theme == "light" else "#161b22"
+    _SHEEN_OPACITY = "0.00" if theme == "light" else "0.05"
+
     CELL  = 12
     GAP   = 3
     STEP  = CELL + GAP
@@ -137,17 +165,17 @@ def generate_contribution_svg(grid: list[list[int]]) -> str:
     p.append('<defs>')
     p.append(f'''
   <linearGradient id="cBg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%"   stop-color="#0d1117"/>
-    <stop offset="100%" stop-color="#161b22"/>
+    <stop offset="0%"   stop-color="{_BG}"/>
+    <stop offset="100%" stop-color="{_BG2}"/>
   </linearGradient>
   <linearGradient id="glassSheen" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.05"/>
-    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.00"/>
+    <stop offset="0%"   stop-color="#000000" stop-opacity="{_SHEEN_OPACITY}"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.00"/>
   </linearGradient>
   <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="{CYAN}"/>
-    <stop offset="50%"  stop-color="{PURPLE}"/>
-    <stop offset="100%" stop-color="{ORANGE}"/>
+    <stop offset="0%"   stop-color="{_CYAN}"/>
+    <stop offset="50%"  stop-color="{_PURPLE}"/>
+    <stop offset="100%" stop-color="{_ORANGE}"/>
   </linearGradient>
   <filter id="glow3" x="-60%" y="-60%" width="220%" height="220%">
     <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
@@ -161,11 +189,11 @@ def generate_contribution_svg(grid: list[list[int]]) -> str:
 
     p.append(f'<rect width="{W}" height="{H}" fill="url(#cBg)" rx="14"/>')
     p.append(f'<rect width="{W}" height="{H}" fill="url(#glassSheen)" rx="14"/>')
-    p.append(f'<rect width="{W}" height="{H}" fill="none" stroke="{BORDER2}" stroke-width="1" rx="14" opacity="0.7"/>')
+    p.append(f'<rect width="{W}" height="{H}" fill="none" stroke="{_BORDER2}" stroke-width="1" rx="14" opacity="0.7"/>')
     p.append(f'<rect x="0" y="0" width="{W}" height="3" fill="url(#accentH)" rx="14"/>')
 
-    p.append(f'<text x="14" y="26" font-family="\'JetBrains Mono\',monospace" font-size="12" font-weight="600" fill="{TEXT}">Contributions</text>')
-    p.append(f'<text x="{W - 12}" y="26" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="11" fill="{DIM}">@{GH_USERNAME}</text>')
+    p.append(f'<text x="14" y="26" font-family="\'JetBrains Mono\',monospace" font-size="12" font-weight="600" fill="{_TEXT}">Contributions</text>')
+    p.append(f'<text x="{W - 12}" y="26" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="11" fill="{_DIM}">@{GH_USERNAME}</text>')
 
     today = datetime.now()
     start_date = today - timedelta(weeks=52)
@@ -175,19 +203,19 @@ def generate_contribution_svg(grid: list[list[int]]) -> str:
         d = start_date + timedelta(weeks=col)
         if d.month != prev_month:
             x = MARGIN_L + col * STEP
-            p.append(f'<text x="{x}" y="{MARGIN_T - 10}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{DIM}">{month_abbr[d.month - 1]}</text>')
+            p.append(f'<text x="{x}" y="{MARGIN_T - 10}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{_DIM}">{month_abbr[d.month - 1]}</text>')
             prev_month = d.month
 
     days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
     for row in range(ROWS):
         if row % 2 == 1:
             y = MARGIN_T + row * STEP + CELL
-            p.append(f'<text x="{MARGIN_L - 5}" y="{y}" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="8" fill="{DIM}">{days[row]}</text>')
+            p.append(f'<text x="{MARGIN_L - 5}" y="{y}" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="8" fill="{_DIM}">{days[row]}</text>')
 
     for col in range(COLS):
         for row in range(ROWS):
             level = grid[col][row]
-            color = CONTRIB_COLORS[level]
+            color = _CONTRIB[level]
             x     = MARGIN_L + col * STEP
             y     = MARGIN_T + row * STEP
             delay = (col + (ROWS - 1 - row)) * 0.024
@@ -198,10 +226,10 @@ def generate_contribution_svg(grid: list[list[int]]) -> str:
 
     lx = W - 148
     ly = H - 16
-    p.append(f'<text x="{lx}" y="{ly}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{DIM}">Less</text>')
-    for i, c in enumerate(CONTRIB_COLORS):
+    p.append(f'<text x="{lx}" y="{ly}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{_DIM}">Less</text>')
+    for i, c in enumerate(_CONTRIB):
         p.append(f'<rect x="{lx + 32 + i * 16}" y="{ly - 10}" width="12" height="12" rx="2" fill="{c}"/>')
-    p.append(f'<text x="{lx + 32 + 5 * 16 + 4}" y="{ly}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{DIM}">More</text>')
+    p.append(f'<text x="{lx + 32 + 5 * 16 + 4}" y="{ly}" font-family="\'JetBrains Mono\',monospace" font-size="9" fill="{_DIM}">More</text>')
 
     p.append('</svg>')
     return "\n".join(p)
@@ -209,8 +237,24 @@ def generate_contribution_svg(grid: list[list[int]]) -> str:
 # ══════════════════════════════════════════════════════════════════
 # ── SVG 2: ACTIVITY PANEL CARD ─────────────────────────────────────
 # ══════════════════════════════════════════════════════════════════
-def generate_code_svg(card_h: int) -> str:
+def generate_code_svg(card_h: int, theme: str = "dark") -> str:
     """Git-log style 'What I'm Building' activity card — distinct from the neofetch info-card."""
+    # Pick palette
+    _BG     = L_BG      if theme == "light" else "#0d1117"
+    _BG2    = L_SURFACE if theme == "light" else "#1c2128"
+    _TBAR   = L_BORDER  if theme == "light" else "#21262d"
+    _TBAR2  = L_SURFACE if theme == "light" else "#1c2128"
+    _BORDER = L_BORDER  if theme == "light" else BORDER
+    _BORDER2= L_BORDER2 if theme == "light" else BORDER2
+    _TEXT   = L_TEXT    if theme == "light" else TEXT
+    _DIM    = L_DIM     if theme == "light" else DIM
+    _CYAN   = L_CYAN    if theme == "light" else CYAN
+    _GREEN  = L_GREEN   if theme == "light" else GREEN
+    _ORANGE = L_ORANGE  if theme == "light" else ORANGE
+    _PURPLE = L_PURPLE  if theme == "light" else PURPLE
+    _YELLOW = L_YELLOW  if theme == "light" else YELLOW
+    _RED    = L_RED     if theme == "light" else RED
+
     W  = 400
     H  = card_h
     FS = 11.5
@@ -221,14 +265,14 @@ def generate_code_svg(card_h: int) -> str:
 
     # Entries: (hash_color, hash, type_color, type, message)
     entries = [
-        (CYAN,   "a3f9b2c", GREEN,  "feat",  "OpenLearning: voice mentor module"),
-        (CYAN,   "d17c841", ORANGE, "wip",   "Distributed caching layer (Redis)"),
-        (CYAN,   "88e2f34", PURPLE, "arch",  "Microservices split in progress"),
-        (CYAN,   "c5a0912", GREEN,  "feat",  "Notora v2: real-time collab editor"),
-        (CYAN,   "f9d3b77", YELLOW, "perf",  "Query optimisation — 3× speedup"),
-        (CYAN,   "02e8c1a", RED,    "fix",   "Race condition in auth middleware"),
-        (CYAN,   "b44f203", GREEN,  "feat",  "LLM eval pipeline (LangChain)"),
-        (CYAN,   "7cb8d56", ORANGE, "wip",   "Portfolio v3 redesign"),
+        (_CYAN,   "a3f9b2c", _GREEN,  "feat",  "OpenLearning: voice mentor module"),
+        (_CYAN,   "d17c841", _ORANGE, "wip",   "Distributed caching layer (Redis)"),
+        (_CYAN,   "88e2f34", _PURPLE, "arch",  "Microservices split in progress"),
+        (_CYAN,   "c5a0912", _GREEN,  "feat",  "Notora v2: real-time collab editor"),
+        (_CYAN,   "f9d3b77", _YELLOW, "perf",  "Query optimisation — 3× speedup"),
+        (_CYAN,   "02e8c1a", _RED,    "fix",   "Race condition in auth middleware"),
+        (_CYAN,   "b44f203", _GREEN,  "feat",  "LLM eval pipeline (LangChain)"),
+        (_CYAN,   "7cb8d56", _ORANGE, "wip",   "Portfolio v3 redesign"),
     ]
 
     p = []
@@ -236,40 +280,40 @@ def generate_code_svg(card_h: int) -> str:
     p.append('<defs>')
     p.append(f'''
   <linearGradient id="winBg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%"   stop-color="#1c2128"/>
-    <stop offset="100%" stop-color="#0d1117"/>
+    <stop offset="0%"   stop-color="{_BG2}"/>
+    <stop offset="100%" stop-color="{_BG}"/>
   </linearGradient>
   <linearGradient id="titleBg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%"   stop-color="#21262d"/>
-    <stop offset="100%" stop-color="#1c2128"/>
+    <stop offset="0%"   stop-color="{_TBAR}"/>
+    <stop offset="100%" stop-color="{_TBAR2}"/>
   </linearGradient>
   <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="{GREEN}"/>
-    <stop offset="50%"  stop-color="{CYAN}"/>
-    <stop offset="100%" stop-color="{PURPLE}"/>
+    <stop offset="0%"   stop-color="{_GREEN}"/>
+    <stop offset="50%"  stop-color="{_CYAN}"/>
+    <stop offset="100%" stop-color="{_PURPLE}"/>
   </linearGradient>''')
     p.append('</defs>')
 
     # Window frame
-    p.append(f'<rect width="{W}" height="{H}" fill="url(#winBg)" rx="12" stroke="{BORDER2}" stroke-width="1"/>')
+    p.append(f'<rect width="{W}" height="{H}" fill="url(#winBg)" rx="12" stroke="{_BORDER2}" stroke-width="1"/>')
     # Title bar
     p.append(f'<rect width="{W}" height="{TITLE_H}" fill="url(#titleBg)" rx="12"/>')
     p.append(f'<rect y="24" width="{W}" height="12" fill="url(#titleBg)"/>')
-    p.append(f'<line x1="0" y1="{TITLE_H}" x2="{W}" y2="{TITLE_H}" stroke="{BORDER}" stroke-width="1"/>')
+    p.append(f'<line x1="0" y1="{TITLE_H}" x2="{W}" y2="{TITLE_H}" stroke="{_BORDER}" stroke-width="1"/>')
     # Traffic lights
     DOT_Y = TITLE_H // 2
     p.append(f'<circle cx="16" cy="{DOT_Y}" r="6" fill="#ff5f57"/>')
     p.append(f'<circle cx="36" cy="{DOT_Y}" r="6" fill="#ffbd2e"/>')
     p.append(f'<circle cx="56" cy="{DOT_Y}" r="6" fill="#28c840"/>')
     # Title text
-    p.append(f'<text x="{W // 2}" y="{DOT_Y + 4}" text-anchor="middle" font-family="\'JetBrains Mono\',monospace" font-size="12" fill="{DIM}">git log --oneline</text>')
+    p.append(f'<text x="{W // 2}" y="{DOT_Y + 4}" text-anchor="middle" font-family="\'JetBrains Mono\',monospace" font-size="12" fill="{_DIM}">git log --oneline</text>')
 
     # Pulsing live dot + "ACTIVE" label
     p.append(
-        f'<circle cx="{W - 56}" cy="{DOT_Y}" r="5" fill="{GREEN}" opacity="0.9">'
+        f'<circle cx="{W - 56}" cy="{DOT_Y}" r="5" fill="{_GREEN}" opacity="0.9">'
         f'<animate attributeName="opacity" values="0.9;0.2;0.9" dur="2s" repeatCount="indefinite"/>'
         f'</circle>'
-        f'<text x="{W - 47}" y="{DOT_Y + 4}" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{GREEN}">LIVE</text>'
+        f'<text x="{W - 47}" y="{DOT_Y + 4}" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{_GREEN}">LIVE</text>'
     )
 
     # Accent top bar
@@ -289,16 +333,16 @@ def generate_code_svg(card_h: int) -> str:
             f'<rect x="{PAD_H + 62}" y="{y - 13}" width="36" height="15" rx="3" fill="{tc}" opacity="0.18"/>'
             f'<text x="{PAD_H + 80}" y="{y}" text-anchor="middle" font-family="\'JetBrains Mono\',monospace" font-size="{FS - 1}" fill="{tc}">{typ}</text>'
             # message
-            f'<text x="{PAD_H + 104}" y="{y}" font-family="\'JetBrains Mono\',monospace" font-size="{FS}" fill="{TEXT}">{safe_msg}</text>'
+            f'<text x="{PAD_H + 104}" y="{y}" font-family="\'JetBrains Mono\',monospace" font-size="{FS}" fill="{_TEXT}">{safe_msg}</text>'
             f'</g>'
         )
         y += LH
 
     # Bottom separator + footer
     footer_y = H - 20
-    p.append(f'<line x1="{PAD_H}" y1="{footer_y - 10}" x2="{W - PAD_H}" y2="{footer_y - 10}" stroke="{BORDER}" stroke-width="1" opacity="0.5"/>')
-    p.append(f'<text x="{PAD_H}" y="{footer_y}" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{DIM}">github.com/{GH_USERNAME}</text>')
-    p.append(f'<text x="{W - PAD_H}" y="{footer_y}" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{DIM}">8 recent commits</text>')
+    p.append(f'<line x1="{PAD_H}" y1="{footer_y - 10}" x2="{W - PAD_H}" y2="{footer_y - 10}" stroke="{_BORDER}" stroke-width="1" opacity="0.5"/>')
+    p.append(f'<text x="{PAD_H}" y="{footer_y}" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{_DIM}">github.com/{GH_USERNAME}</text>')
+    p.append(f'<text x="{W - PAD_H}" y="{footer_y}" text-anchor="end" font-family="\'JetBrains Mono\',monospace" font-size="10" fill="{_DIM}">8 recent commits</text>')
 
     p.append('</svg>')
     return "\n".join(p), W, H
@@ -306,7 +350,21 @@ def generate_code_svg(card_h: int) -> str:
 # ══════════════════════════════════════════════════════════════════
 # ── SVG 3: INFO CARD ───────────────────────────────────────────────
 # ══════════════════════════════════════════════════════════════════
-def generate_info_svg(card_h: int) -> str:
+def generate_info_svg(card_h: int, theme: str = "dark") -> str:
+    # Pick palette
+    _BG      = L_BG      if theme == "light" else "#0d1117"
+    _BG2     = "#f0f3f7" if theme == "light" else "#0f1923"
+    _BORDER2 = L_BORDER2 if theme == "light" else BORDER2
+    _TEXT    = L_TEXT    if theme == "light" else TEXT
+    _DIM     = L_DIM     if theme == "light" else DIM
+    _CYAN    = L_CYAN    if theme == "light" else CYAN
+    _GREEN   = L_GREEN   if theme == "light" else GREEN
+    _ORANGE  = L_ORANGE  if theme == "light" else ORANGE
+    _PURPLE  = L_PURPLE  if theme == "light" else PURPLE
+    _YELLOW  = L_YELLOW  if theme == "light" else YELLOW
+    _RED     = L_RED     if theme == "light" else RED
+    _BORDER2ROW = L_BORDER if theme == "light" else BORDER2
+
     W   = 380
     H   = card_h
     FS  = 12.5
@@ -314,22 +372,22 @@ def generate_info_svg(card_h: int) -> str:
     PAD = 20
 
     rows: list[tuple[str, str, str, bool]] = [
-        ("",      NAME,                           PURPLE, True),
-        ("",      "─" * 21,                      BORDER2, False),
-        ("Role",  ROLE,                           GREEN,  False),
-        ("Edu",   EDUCATION,                      ORANGE, False),
-        ("Focus", "Systems & Full-Stack",         TEXT,   False),
-        ("",      "",                             DIM,    False),
-        ("Langs", "Python · TS · Java · C++",     CYAN,   False),
-        ("Tech",  "React · Node · AWS · SQL",     YELLOW, False),
-        ("",    "",                        DIM,    False),
-        ("Wins","",                        ORANGE, True),
+        ("",      NAME,                           _PURPLE, True),
+        ("",      "─" * 21,                      _BORDER2ROW, False),
+        ("Role",  ROLE,                           _GREEN,  False),
+        ("Edu",   EDUCATION,                      _ORANGE, False),
+        ("Focus", "Systems & Full-Stack",         _TEXT,   False),
+        ("",      "",                             _DIM,    False),
+        ("Langs", "Python · TS · Java · C++",     _CYAN,   False),
+        ("Tech",  "React · Node · AWS · SQL",     _YELLOW, False),
+        ("",    "",                        _DIM,    False),
+        ("Wins","",                        _ORANGE, True),
     ]
     for h in HIGHLIGHTS:
-        rows.append(("", f"  {h}", TEXT, False))
+        rows.append(("", f"  {h}", _TEXT, False))
     rows += [
-        ("",    "",                        DIM,    False),
-        ("Web",  PORTFOLIO,                CYAN,   False),
+        ("",    "",                        _DIM,    False),
+        ("Web",  PORTFOLIO,                _CYAN,   False),
     ]
 
     p = []
@@ -337,13 +395,13 @@ def generate_info_svg(card_h: int) -> str:
     p.append('<defs>')
     p.append(f'''
   <linearGradient id="icBg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%"   stop-color="#0d1117"/>
-    <stop offset="100%" stop-color="#0f1923"/>
+    <stop offset="0%"   stop-color="{_BG}"/>
+    <stop offset="100%" stop-color="{_BG2}"/>
   </linearGradient>
   <linearGradient id="accentV" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="{CYAN}"/>
-    <stop offset="50%"  stop-color="{PURPLE}"/>
-    <stop offset="100%" stop-color="{ORANGE}"/>
+    <stop offset="0%"   stop-color="{_CYAN}"/>
+    <stop offset="50%"  stop-color="{_PURPLE}"/>
+    <stop offset="100%" stop-color="{_ORANGE}"/>
   </linearGradient>
   <filter id="dotGlow" x="-60%" y="-60%" width="220%" height="220%">
     <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
@@ -351,7 +409,7 @@ def generate_info_svg(card_h: int) -> str:
   </filter>''')
     p.append('</defs>')
 
-    p.append(f'<rect width="{W}" height="{H}" fill="url(#icBg)" rx="12" stroke="{BORDER2}" stroke-width="1"/>')
+    p.append(f'<rect width="{W}" height="{H}" fill="url(#icBg)" rx="12" stroke="{_BORDER2}" stroke-width="1"/>')
     p.append(f'<rect x="0" y="0" width="{W}" height="3" fill="url(#accentV)" rx="12"/>')
 
     y = PAD + int(LH) + 8
@@ -371,8 +429,8 @@ def generate_info_svg(card_h: int) -> str:
             p.append(
                 f'<g transform="translate(0,10)" opacity="0">{anim}'
                 f'<text x="{PAD}" y="{y}" font-family="\'JetBrains Mono\',monospace" font-size="{fsize}" font-weight="{fw}">'
-                f'<tspan fill="{ORANGE}">{safe_key}</tspan>'
-                f'<tspan fill="{DIM}">: </tspan>'
+                f'<tspan fill="{_ORANGE}">{safe_key}</tspan>'
+                f'<tspan fill="{_DIM}">: </tspan>'
                 f'<tspan fill="{color}">{safe_val}</tspan>'
                 f'</text></g>'
             )
@@ -385,7 +443,7 @@ def generate_info_svg(card_h: int) -> str:
 
     palette_y = H - 20
     dot_x = PAD
-    for dot_color in [RED, ORANGE, YELLOW, GREEN, CYAN, PURPLE]:
+    for dot_color in [_RED, _ORANGE, _YELLOW, _GREEN, _CYAN, _PURPLE]:
         p.append(f'<circle cx="{dot_x}" cy="{palette_y}" r="5" fill="{dot_color}" filter="url(#dotGlow)"/>')
         dot_x += 20
 
@@ -401,15 +459,27 @@ def update_readme():
         f'<table align="center">\n'
         f'  <tr>\n'
         f'    <td valign="top" align="center">\n'
-        f'      <img src="assets/info-card.svg" />\n'
+        f'      <picture>\n'
+        f'        <source media="(prefers-color-scheme: light)" srcset="assets/info-card-light.svg" />\n'
+        f'        <source media="(prefers-color-scheme: dark)"  srcset="assets/info-card.svg" />\n'
+        f'        <img src="assets/info-card.svg" />\n'
+        f'      </picture>\n'
         f'    </td>\n'
         f'    <td valign="top" align="center">\n'
-        f'      <img src="assets/terminal-card.svg" />\n'
+        f'      <picture>\n'
+        f'        <source media="(prefers-color-scheme: light)" srcset="assets/terminal-card-light.svg" />\n'
+        f'        <source media="(prefers-color-scheme: dark)"  srcset="assets/terminal-card.svg" />\n'
+        f'        <img src="assets/terminal-card.svg" />\n'
+        f'      </picture>\n'
         f'    </td>\n'
         f'  </tr>\n'
         f'</table>\n\n'
         f'<div align="center">\n'
-        f'  <img src="assets/github-contribution-animation.svg" />\n'
+        f'  <picture>\n'
+        f'    <source media="(prefers-color-scheme: light)" srcset="assets/github-contribution-animation-light.svg" />\n'
+        f'    <source media="(prefers-color-scheme: dark)"  srcset="assets/github-contribution-animation.svg" />\n'
+        f'    <img src="assets/github-contribution-animation.svg" />\n'
+        f'  </picture>\n'
         f'</div>\n'
         f"{README_MARKER_END}"
     )
@@ -438,21 +508,42 @@ def update_readme():
 def main():
     print("⚡  Generating premium SVG assets for github.com/" + GH_USERNAME)
     grid = fetch_contributions()
+
+    # Dark theme (default)
     out1 = ASSETS_DIR / "github-contribution-animation.svg"
-    out1.write_text(generate_contribution_svg(grid), encoding="utf-8")
+    out1.write_text(generate_contribution_svg(grid, theme="dark"), encoding="utf-8")
     print(f"  ✓ {out1.name}")
+
+    # Light theme
+    out1l = ASSETS_DIR / "github-contribution-animation-light.svg"
+    out1l.write_text(generate_contribution_svg(grid, theme="light"), encoding="utf-8")
+    print(f"  ✓ {out1l.name}")
 
     card_h = 320
 
-    term_svg, _, _ = generate_code_svg(card_h=card_h)
+    # Dark terminal card
+    term_svg, _, _ = generate_code_svg(card_h=card_h, theme="dark")
     out2 = ASSETS_DIR / "terminal-card.svg"
     out2.write_text(term_svg, encoding="utf-8")
     print(f"  ✓ {out2.name}")
 
-    info_svg = generate_info_svg(card_h=card_h)
+    # Light terminal card
+    term_svg_l, _, _ = generate_code_svg(card_h=card_h, theme="light")
+    out2l = ASSETS_DIR / "terminal-card-light.svg"
+    out2l.write_text(term_svg_l, encoding="utf-8")
+    print(f"  ✓ {out2l.name}")
+
+    # Dark info card
+    info_svg = generate_info_svg(card_h=card_h, theme="dark")
     out3 = ASSETS_DIR / "info-card.svg"
     out3.write_text(info_svg, encoding="utf-8")
     print(f"  ✓ {out3.name}")
+
+    # Light info card
+    info_svg_l = generate_info_svg(card_h=card_h, theme="light")
+    out3l = ASSETS_DIR / "info-card-light.svg"
+    out3l.write_text(info_svg_l, encoding="utf-8")
+    print(f"  ✓ {out3l.name}")
 
     update_readme()
 

@@ -18,8 +18,8 @@ jobs:
 
       - name: Commit Internal States
         run: |
-          git config user.name "ShivanshGarg007"
-          git config user.email "shivanshgarg007@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p .github/data
 
           # Pick a random number of commits between 1 and 5

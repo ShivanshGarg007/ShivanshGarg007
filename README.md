@@ -12,16 +12,28 @@
 <table align="center">
   <tr>
     <td valign="top" align="center">
-      <img src="assets/info-card.svg" />
+      <picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/info-card-light.svg" />
+        <source media="(prefers-color-scheme: dark)"  srcset="assets/info-card.svg" />
+        <img src="assets/info-card.svg" />
+      </picture>
     </td>
     <td valign="top" align="center">
-      <img src="assets/terminal-card.svg" />
+      <picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/terminal-card-light.svg" />
+        <source media="(prefers-color-scheme: dark)"  srcset="assets/terminal-card.svg" />
+        <img src="assets/terminal-card.svg" />
+      </picture>
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="assets/github-contribution-animation.svg" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="assets/github-contribution-animation-light.svg" />
+    <source media="(prefers-color-scheme: dark)"  srcset="assets/github-contribution-animation.svg" />
+    <img src="assets/github-contribution-animation.svg" />
+  </picture>
 </div>
 <!-- PROFILE-SVG-END -->
 
@@ -100,7 +112,11 @@
 ## 3D Contribution Graph
 
 <div align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-season.svg" />
+    <source media="(prefers-color-scheme: dark)"  srcset="profile-3d-contrib/profile-night-rainbow.svg" />
+    <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+  </picture>
 </div>
 
 <br/>

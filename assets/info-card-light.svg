@@ -1,0 +1,40 @@
+<svg width="380" height="320" viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+  <linearGradient id="icBg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#f0f3f7"/>
+  </linearGradient>
+  <linearGradient id="accentV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#0550ae"/>
+    <stop offset="50%"  stop-color="#6639ba"/>
+    <stop offset="100%" stop-color="#bc4c00"/>
+  </linearGradient>
+  <filter id="dotGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+    <feComposite   in="b" in2="SourceGraphic" operator="over"/>
+  </filter>
+</defs>
+<rect width="380" height="320" fill="url(#icBg)" rx="12" stroke="#afb8c1" stroke-width="1"/>
+<rect x="0" y="0" width="380" height="3" fill="url(#accentV)" rx="12"/>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.000s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.000s" dur="0.22s" fill="freeze"/><text x="20" y="50" font-family="'JetBrains Mono',monospace" font-size="14.0" font-weight="700" fill="#6639ba" xml:space="preserve">Shivansh Garg</text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.060s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.060s" dur="0.22s" fill="freeze"/><text x="20" y="72" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#d0d7de" xml:space="preserve">─────────────────────</text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.120s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.120s" dur="0.22s" fill="freeze"/><text x="20" y="94" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Role</tspan><tspan fill="#57606a">: </tspan><tspan fill="#1a7f37">Associate Software Engineer @ Lowe's</tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.180s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.180s" dur="0.22s" fill="freeze"/><text x="20" y="116" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Edu</tspan><tspan fill="#57606a">: </tspan><tspan fill="#bc4c00">Chitkara University (CGPA: 10.00)</tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.240s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.240s" dur="0.22s" fill="freeze"/><text x="20" y="138" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Focus</tspan><tspan fill="#57606a">: </tspan><tspan fill="#24292f">Systems &amp; Full-Stack</tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.300s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.300s" dur="0.22s" fill="freeze"/><text x="20" y="160" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#57606a" xml:space="preserve"></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.360s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.360s" dur="0.22s" fill="freeze"/><text x="20" y="182" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Langs</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0550ae">Python · TS · Java · C++</tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.420s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.420s" dur="0.22s" fill="freeze"/><text x="20" y="204" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Tech</tspan><tspan fill="#57606a">: </tspan><tspan fill="#9a6700">React · Node · AWS · SQL</tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.480s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.480s" dur="0.22s" fill="freeze"/><text x="20" y="226" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#57606a" xml:space="preserve"></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.540s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.540s" dur="0.22s" fill="freeze"/><text x="20" y="248" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="700"><tspan fill="#bc4c00">Wins</tspan><tspan fill="#57606a">: </tspan><tspan fill="#bc4c00"></tspan></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.600s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.600s" dur="0.22s" fill="freeze"/><text x="20" y="270" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#24292f" xml:space="preserve">  Build with Bharat 3.0 — Winner</text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.660s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.660s" dur="0.22s" fill="freeze"/><text x="20" y="292" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#24292f" xml:space="preserve">  Hack4Delhi 2026 — Top 30 / 4,500+</text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.720s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.720s" dur="0.22s" fill="freeze"/><text x="20" y="314" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400" fill="#57606a" xml:space="preserve"></text></g>
+<g transform="translate(0,10)" opacity="0"><animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="0.780s" dur="0.22s" fill="freeze"/><animate attributeName="opacity" from="0" to="1" begin="0.780s" dur="0.22s" fill="freeze"/><text x="20" y="336" font-family="'JetBrains Mono',monospace" font-size="12.5" font-weight="400"><tspan fill="#bc4c00">Web</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0550ae">shivanshgarg.vercel.app</tspan></text></g>
+<circle cx="20" cy="300" r="5" fill="#cf222e" filter="url(#dotGlow)"/>
+<circle cx="40" cy="300" r="5" fill="#bc4c00" filter="url(#dotGlow)"/>
+<circle cx="60" cy="300" r="5" fill="#9a6700" filter="url(#dotGlow)"/>
+<circle cx="80" cy="300" r="5" fill="#1a7f37" filter="url(#dotGlow)"/>
+<circle cx="100" cy="300" r="5" fill="#0550ae" filter="url(#dotGlow)"/>
+<circle cx="120" cy="300" r="5" fill="#6639ba" filter="url(#dotGlow)"/>
+</svg>
